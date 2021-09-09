@@ -6,7 +6,7 @@ public class son_balance extends father {
 	public void Transactions() {
 		
 		System.out.println( "-----------------------------------------" );
-		System.out.println( "Your current balance is:" + getBalance() );
+		System.out.println( "Your current balance is: $" + getBalance() );
 		System.out.println( "-----------------------------------------" );
 		
 	}

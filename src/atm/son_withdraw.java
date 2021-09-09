@@ -5,7 +5,7 @@ public class son_withdraw extends father {
 	@Override
 	public void Transactions() {
 		
-		System.out.println( "How much money do you want to withdraw?" );
+		System.out.print( "How much money do you want to withdraw? $" );
 		Withdraw();
 		
 		if( withdraw <= getBalance() ) {
@@ -14,8 +14,8 @@ public class son_withdraw extends father {
 			setBalance( transactions - withdraw );
 			
 			System.out.println( "-----------------------------------------" );
-			System.out.println( "Withdrew: " + withdraw );
-			System.out.println( "Your current balance is:" + getBalance() );
+			System.out.println( "Withdrew: $" + withdraw );
+			System.out.println( "Your current balance is: $" + getBalance() );
 			System.out.println( "-----------------------------------------" );
 			
 		} else {
