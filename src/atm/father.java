@@ -21,8 +21,14 @@ public abstract class father {
 			System.out.println( "2. Withdraw" );  
 	        System.out.println( "3. Deposit" );  
 	        System.out.println( "4. Exit" );  
-	        System.out.print( "Select an option:" ); 
-			choose = input.nextInt();
+	        System.out.print( "Select an option:" );
+	        
+	        try {
+	        	choose = Integer.parseInt(input.nextLine());
+	        } catch(NumberFormatException nfe) {
+	        	
+	        }
+			
 			
 			if( choose >= 1 && choose <= 4 ) {
 				
@@ -75,13 +81,23 @@ public abstract class father {
 	
 	public void Withdraw() {
 		
-		withdraw = input.nextInt();
+		//withdraw = input.nextInt();
+		try {
+			withdraw = Integer.parseInt(input.nextLine());
+        } catch(NumberFormatException nfe) {
+        	System.out.println( "Try again" );  
+        }
 		
 	}
 	
 	public void Deposit() {
 		
-		deposit = input.nextInt();
+		//deposit = input.nextInt();
+		try {
+			deposit = Integer.parseInt(input.nextLine());
+        } catch(NumberFormatException nfe) {
+        	System.out.println( "Try again" );  
+        }
 		
 	}
 	
